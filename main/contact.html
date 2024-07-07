@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Your feedback</legend>
+      <form action="">
+        <p>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="enter your email">
+        </p>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" value="Biwas" readonly>
+        </div><br>
+        <div>
+          <label for="password">Pasword</label>
+          <input type="password" id="password" name="password">
+        </div><br>
+        <div>
+          <h4>Please select your Gender</h4>
+          <input type="radio" name="gender" id="male" checked>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+        </div><br>
+        <div>
+          <h4>Hobbies</h4>
+          <input type="checkbox" name="hobbies" id="sing">
+          <label for="sing">Sing</label>
+          <input type="checkbox" name="hobbies" id="dance">
+          <label for="dance">Dance</label>
+        </div><br>
+
+        <div>
+          <textarea placeholder="Input your view" name="msg" id="" cols="30" rows="10"></textarea>
+        </div><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Test 1(google search)</legend>
+      <form action="https://www.google.com/search">
+        <p>
+          <label for="search">Search</label>
+          <input type="text" id="search" name="q" placeholder="enter here">
+        </p>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </fieldset>
+    <fieldset>
+      <legend>Test 2(mail)</legend>
+      <form action="mailto:biwaslawati@gmail.com" method="post" enctype="text/plain">
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="enter your email">
+        </p>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+        </div><br>
+        <div>
+          <textarea placeholder="Input your view" name="msg" id="" cols="30" rows="10"></textarea>
+        </div><br>
+        <div>
+          <h4>Hobbies</h4>
+          <input type="checkbox" name="hobbies" id="sing" value="sing">
+          <label for="sing">Sing</label>
+          <input type="checkbox" name="hobbies" id="dance" value="dance">
+          <label for="dance">Dance</label>
+        </div><br>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </fieldset>
+    <h1>Contact Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur porro autem ipsa error, molestias
+      consequatur, cumque perferendis sunt laborum saepe dolores nesciunt quasi maiores veritatis provident suscipit
+      animi sint!</p>
+    <h3>Daily Routine</h3>
+    <table border="2px" cellpadding="20px" cellspacing="0">
+      <thead>
+        <th>Day</th>
+        <th>Morning</th>
+        <th>Noon</th>
+        <th>Night</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sunday</td>
+          <td>Wakeup at 5am</td>
+          <td>Play games</td>
+          <td>Go to bed</td>
+        </tr>
+
+        <tr>
+          <td>Monday</td>
+          <td>Wakeup at 5am</td>
+          <td>Go to study</td>
+          <td rowspan="2">Go to bed</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Wakeup at 5am</td>
+          <td>Work</td>
+
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Remark</td>
+          <td colspan="2">Follow the Routine</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+
+</html>
