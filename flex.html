@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .bx {
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        /* gap: 20px; */
+        align-items: center;
+
+      }
+
+      .bx1 {
+        /* align-self: flex-end; */
+        background-color: red;
+        height: 100px;
+        order: 5;
+      }
+
+      .bx2 {
+        background-color: green;
+      }
+
+      .bx3 {
+        background-color: yellow;
+      }
+
+      .bx4 {
+        background-color: blue;
+      }
+
+      .bx5 {
+        background-color: pink;
+        order: -3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx">
+
+      <div class="bx1">
+        <h3>Bx1</h3>
+      </div>
+
+      <div class="bx2">
+        <h3>Bx2</h3>
+      </div>
+
+      <div class="bx3">
+        <h3>Bx3</h3>
+      </div>
+
+      <div class="bx4">
+        <h3>Bx4</h3>
+      </div>
+
+      <div class="bx5">
+        <h3>Bx5</h3>
+      </div>
+
+    </div>
+  </body>
+
+</html>

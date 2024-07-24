@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      .bx {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: red;
+        box-shadow: 50px 50px 5px green;
+        position: absolute;
+        animation: box 4s linear infinite alternate-reverse;
+      }
+
+      .bx img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 5px 1px red;
+      }
+
+      @keyframes box {
+        0% {
+          left: 0;
+          top: 0;
+        }
+
+        25% {
+          left: calc(100% - 200px);
+          top: 0;
+        }
+
+        50% {
+          left: calc(100% - 200px);
+          top: calc(100% - 200px);
+        }
+
+        75% {
+          left: 0;
+          top: calc(100% - 200px);
+        }
+
+        100% {
+          left: 0;
+          top: 0;
+          /* transform: rotate(360deg); */
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bx">
+        <img src="/assets/pic3.jpeg" alt="">
+      </div>
+    </div>
+  </body>
+
+</html>
